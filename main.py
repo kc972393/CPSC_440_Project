@@ -6,7 +6,7 @@ import adafruit_dht
 import time
 import board
 
-dhtSensor = adafruit_dht.DHT22(board.D4)
+dhtSensor = adafruit_dht.DHT22(board.D4, False)
 
 while True:
     try:
@@ -21,4 +21,4 @@ while True:
     print(" Celcius.")
     print("The humidity is currently ", end="")
     print(humidity, end="")
-    time.sleep(60)
+    time.sleep(10)
