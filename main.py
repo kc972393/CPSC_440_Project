@@ -10,6 +10,7 @@ dhtSensor = adafruit_dht.DHT22(board.D4)
 
 while True:
     try:
+        humidity = dhtSensor.humidity
         temp_c = dhtSensor.temperature
     except RuntimeError:
         print("An error has occured, trying again.")
@@ -18,4 +19,6 @@ while True:
     print("The temperature is currently ", end="")
     print(temp_c, end="")
     print(" Celcius.")
+    print("The humidity is currently ", end="")
+    print(humidity, end="")
     time.sleep(60)
