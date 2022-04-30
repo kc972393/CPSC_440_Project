@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 # CPSC-440 Project
 # Brendan Wang and Katelyn Choi
 
