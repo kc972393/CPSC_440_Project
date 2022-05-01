@@ -13,12 +13,12 @@ while True:
         humidity = dhtSensor.humidity
         temp_c = dhtSensor.temperature
     except RuntimeError:
-        print("An error has occured, trying again.")
         continue
 
     print("The temperature is currently ", end="")
     print(temp_c, end="")
-    print(" Celcius.")
-    print("The humidity is currently ", end="")
-    print(humidity, end="")
+    print(" degrees Celcius.")
+    print("Humidity: ", end="")
+    print(humidity)
+    print("==============================")
     time.sleep(10)
