@@ -5,10 +5,11 @@
 import adafruit_dht
 import time
 import board
-import espeakng
+from espeakng import ESpeakNG
 
 dhtSensor = adafruit_dht.DHT22(board.D4, False)
-esng = espeakng.Speaker()
+esng = ESpeakNG()
+esng.voice = en-us
 
 while True:
     try:
