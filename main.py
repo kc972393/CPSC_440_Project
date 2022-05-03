@@ -5,8 +5,10 @@
 import adafruit_dht
 import time
 import board
+from espeakng import ESpeakNG
 
 dhtSensor = adafruit_dht.DHT22(board.D4, False)
+esng=ESpeakNG()
 
 while True:
     try:
@@ -21,4 +23,6 @@ while True:
     print("Humidity: ", end="")
     print(humidity)
     print("==============================")
+    esng.say(temp_c)
+    esng.say('degrees celsius')
     time.sleep(10)
