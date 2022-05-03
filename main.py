@@ -25,6 +25,6 @@ while True:
     print(humidity)
     print("==============================")
     converted_num = str(temp_c)
-    esng.say(converted_num, wait4prev=True)
-    esng.say('degrees celsius', wait4prev=True)
+    esng.say(converted_num)
+    esng.say('degrees celsius')
     time.sleep(10)
