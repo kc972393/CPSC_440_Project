@@ -26,6 +26,6 @@ while True:
     print("==============================")
     converted_num = str(temp_c)
     esng.say(converted_num)
-    time.sleep(4)
+    time.sleep(2)
     esng.say('degrees celsius')
     time.sleep(10)
