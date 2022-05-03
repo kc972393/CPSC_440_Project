@@ -9,7 +9,7 @@ from espeakng import ESpeakNG
 
 dhtSensor = adafruit_dht.DHT22(board.D4, False)
 esng = ESpeakNG()
-esng.voice = 'english-us'
+esng.voice = 'gmw/en-us'
 
 while True:
     try:
